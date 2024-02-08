@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/v1', currencyRoutes);
 
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(SwaggerSpec));
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(SwaggerSpec, {customCssUrl: "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css"}));
 
 app.use(
   (err: Error, request: Request, response: Response, next: NextFunction) => {

@@ -14,7 +14,7 @@ const options: swaggerJsdoc.Options = {
     },
     servers: [
       {
-        url: 'http://localhost:3333',
+        url: 'https://vercel-backend-teal.vercel.app/',
       },
     ],
   },
